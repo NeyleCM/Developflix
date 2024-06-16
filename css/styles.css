@@ -48,9 +48,11 @@ table {
 
 body {
   font-family: Arial, sans-serif;
+  }
+
+.wrapper {
   background-color: rgba(128, 125, 125, 0.342);
 }
-
 h1 {
   display: flex;
   justify-content: center;
