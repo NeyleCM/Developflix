@@ -57,6 +57,8 @@ h1 {
   display: flex;
   justify-content: center;
   font-size: bolder;
+  margin-top: 0;
+  padding-top: 20px;
 }
 
 span {
@@ -70,9 +72,29 @@ span {
 }
 
 h2 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
+  font-size: 2rem;
+  margin: 10px;
 }
+
+.generoAccion {
+  background-color: rgba(35, 44, 11, 0.192);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.generoThriller {
+  background-color: rgba(35, 44, 11, 0.192);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.generoAventura {
+  background-color: rgba(35, 44, 11, 0.192);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+
  p {
   font-size: larger;
   color: black;
