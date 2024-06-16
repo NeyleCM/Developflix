@@ -27,17 +27,17 @@ function muestraPeliculas(genreId, divId) {
     
     peliculas.forEach(pelicula => {
         if (pelicula.genre_ids.includes(genreId)) {
-            const movieDiv = document.createElement('div');
-            const movieTitle = document.createElement('p');
-            const moviePoster = document.createElement('img');
+            const peliculaDiv = document.createElement('div');
+            const tituloPelicula = document.createElement('p');
+            const imagenPelicula = document.createElement('img');
 
-            movieTitle.textContent = pelicula.title;
-            moviePoster.src = `https://image.tmdb.org/t/p/w500${pelicula.poster_path}`;
-            moviePoster.alt = pelicula.title;
+            tituloPelicula.textContent = pelicula.title;
+            imagenPelicula.src = `https://image.tmdb.org/t/p/w500${pelicula.poster_path}`;
+            imagenPelicula.alt = pelicula.title;
 
-            movieDiv.appendChild(moviePoster);
-            movieDiv.appendChild(movieTitle);
-            container.appendChild(movieDiv);
+            peliculaDiv.appendChild(imagenPelicula);
+            peliculaDiv.appendChild(tituloPelicula);
+            container.appendChild(peliculaDiv);
         }
     });
 }
