@@ -1,10 +1,67 @@
 /* styles.css */
+
+html, body, div, span, applet, object, iframe, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 body {
-  font-family: Arial, sans-serif;
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
+/* -- DESDE AQUÍ -- */
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgba(128, 125, 125, 0.342);
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-size: bolder;
+}
+
+span {
+  color: red;
+}
 .genero-container {
-  margin: 20px;
+  margin: 40px;
   padding: 20px;
   border: 1px solid #ccc;
   background-color: #f8f8f8;
@@ -14,5 +71,39 @@ h2 {
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
+ p {
+  font-size: larger;
+  color: black;
+  margin: 5px;
+ }
+
+.genero {
+display: flex;
+flex-wrap: wrap;
+justify-content: flex-start;
+gap: 20px;
+
+}
+
+#accion {
+  background: linear-gradient(0deg, #c9b184b7, #c9b1845d);
+  border-radius: 10px;
+}
+
+#thriller {
+  background: linear-gradient(180deg, #ebc1a441, #eeb7906c);
+  border-radius: 10px;
+}
+
+#aventura {
+  background: linear-gradient(#ebbc9a4b, #b99f8d96) ;
+  border-radius: 10px;
+}
 
 
+
+/*
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}*/
