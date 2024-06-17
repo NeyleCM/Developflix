@@ -16,10 +16,11 @@ const peliculasFiltradas2 = peliculas.filter(peliculaT =>
     peliculaT.genre_ids.includes(generoThriller));
 console.log(peliculasFiltradas2)
 
-
   const peliculasFiltradas3 = peliculas.filter(peliculaAv =>
     peliculaAv.genre_ids.includes(generoAventura));
 console.log(peliculasFiltradas3);
+
+
 
 function muestraPeliculas(genreId, divId) {
     const container = document.getElementById(divId);
